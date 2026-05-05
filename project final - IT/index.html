@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <title>كورس ثانوي</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h2>منصة الثانوية</h2>
+    <button>ابدأ الآن</button>
+  </header>
+
+  <section class="container">
+
+    <aside>
+      <h3>المواد</h3>
+      <div id="filters">
+        <label><input type="checkbox" value="عربي"> عربي</label>
+        <label><input type="checkbox" value="إنجليزي"> إنجليزي</label>
+        <label><input type="checkbox" value="رياضيات"> رياضيات</label>
+        <label><input type="checkbox" value="فيزياء"> فيزياء</label>
+        <label><input type="checkbox" value="كيمياء"> كيمياء</label>
+        <label><input type="checkbox" value="أحياء"> أحياء</label>
+        <label><input type="checkbox" value="تاريخ"> تاريخ</label>
+        <label><input type="checkbox" value="جغرافيا"> جغرافيا</label>
+        <label><input type="checkbox" value="جيولوجيا"> جيولوجيا</label>
+        <label><input type="checkbox" value="فلسفة"> فلسفة</label>
+        <label><input type="checkbox" value="فرنساوي"> فرنساوي</label>
+      </div>
+      <h3>السنة الدراسية</h3>
+      <div id="grades">
+        <label><input type="checkbox" value="الصف الأول الثانوي"> الصف الأول الثانوي</label>
+        <label><input type="checkbox" value="الصف الثاني الثانوي"> الصف الثاني الثانوي</label>
+        <label><input type="checkbox" value="الصف الثالث الثانوي"> الصف الثالث الثانوي</label>
+      </div>
+    </aside>
+
+    <main>
+
+        
+      <input type="text" id="search" placeholder="ابحث عن كورس...">
+
+        
+      <div id="courses" class="grid"></div>
+
+      
+      <div id="pagination"></div>
+
+    </main>
+
+  </section>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

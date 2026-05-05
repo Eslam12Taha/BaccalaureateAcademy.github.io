@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Wingx";
+    src: url("Wingx.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Mikhak-Medium-1";
+    src: url("Mikhak-Medium-1.ttf") format("truetype");
+}
+
+:root {
+    --bg-main: #f1f4f8c5;
+    --card-bg: #ffffff;
+    --primary-color: #2563EB;
+    --primary-blue: #2158cd;
+    --cta-color: #FF6D00;
+    --gold-color: #FACC15;
+    --goldtr-color: #ffdd5786;
+    --text-main: #1E293B;
+    --text-muted: #64748ba2;
+    --shadow-custom: 0 5px 15px -5px rgba(0, 0, 0, 0.4);
+    --linear: linear-gradient(rgba(31, 57, 151, 0.3), rgba(25, 86, 147, 0.3));
+}
+
+.darkmode {
+  --bg-main: #1e293bd8;
+  --card-bg: #1E293B;
+  --primary-color: #3B82F6;
+  --cta-color: #FF6D00;   
+  --gold-color: #FACC15;
+  --text-main: #F1F5F9;
+  --text-muted: #94A3B8;
+  --shadow-custom: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+   --linear: linear-gradient(rgba(255, 255, 255, 0.3), rgba(219, 237, 255, 0.248));
+}
+
+header {
+    background-color: var(--bg-main);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 2px 10px var(--shadow-custom);
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--primary-color);
+    text-align: center;
+    align-items: center;
+    padding: 5px 2%;
+}
+
+html , body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 24px;
+    font-family: "Wingx";
+    font-weight: normal;
+}
+
+#navbr {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 18px;
+    background-color: var(--bg-main);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 10px 0;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#navbr.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
+
+#navbr ul li a {
+    font-family: "Mikhak-Medium-1";
+    text-decoration: none;
+    color: var(--gold-color);
+    font-weight: 500;
+    display: block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin: 2px 8px;
+}
+
+#navbr ul {
+    list-style: none;
+    flex-direction: column;
+    gap: 0;
+}
+
+#navbr ul li a:hover {
+    background-color: var(--primary-color);
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.btns button {
+    font-family: "Mikhak-Medium-1";
+    padding: 5px 10px;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--card-bg);
+    border-radius: 7px;
+    font-size: 14px;
+    cursor: pointer;
+    transition:0.3s ease;
+}
+
+.btns a{
+    font-family: "Mikhak-Medium-1";
+    padding: 5px 10px;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--card-bg);
+    border-radius: 7px;
+    font-size: 14px;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.btns button:hover {
+    background-color: var(--primary-blue);
+    scale: 1.03;
+}
+.btns a:hover {
+    background-color: var(--primary-blue);
+    scale: 1.03;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#menu button:hover {
+    background-color: var(--primary-blue);
+}
+
+#menu svg {
+    display: block;
+    fill: var(--card-bg);
+}
+
+#menu svg:last-child{
+    display: none;
+}
+#menu.menu svg:first-child{
+    display: none;
+}
+#menu.menu svg:last-child{
+    display: block;
+}
+
+#togglebtn {
+    display: flex;
+    height: 37px;
+    width: 37px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btns #togglebtn:hover {
+    background-color: var(--primary-blue);
+}
+
+#togglebtn svg {
+    display: block;
+    fill: var(--card-bg);
+}
+
+#icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#icon svg {
+    display: block;
+    fill: var(--card-bg);
+}
+
+#togglebtn svg:last-child{
+    display: none;
+}
+.darkmode #togglebtn svg:first-child{
+    display: none;
+}
+.darkmode #togglebtn svg:last-child{
+    display: block;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+}
+
+main {
+    flex: 1;
+    padding: 10px 30px 10px 30px;
+}
+
+.Fc {
+    background-color: var(--gold-color);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    font-family: "Mikhak-Medium-1";
+    font-size: 20px;
+    color: var(--primary-blue);
+}
+
+@media (max-width: 1024px) {
+    header {
+        padding: 5px 3%;
+    }
+
+    header a {
+        font-size: 20px;
+    }
+
+    .btns {
+        gap: 7px;
+    }
+
+    .btns a {
+        font-size: 13px;
+        padding: 5px 9px;
+    }
+
+    .btns button {
+        font-size: 13px;
+        padding: 5px 9px;
+    }
+
+    #togglebtn {
+        height: 33px;
+        width: 33px;
+    }
+
+    #navbr {
+        left: 12px;
+    }
+
+    #navbr .navb {
+        display: none;
+    }
+
+    main {
+        padding: 10px 20px;
+    }
+
+    .Fc {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 8px 4%;
+        flex-wrap: nowrap;
+        gap: 8px;
+    }
+
+    header a {
+        font-size: 17px;
+        white-space: nowrap;
+        flex-shrink: 0;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .btns .login,
+    .btns .signup {
+        display: none;
+    }
+
+    .btns {
+        gap: 6px;
+        flex-shrink: 0;
+    }
+
+    .btns button {
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+
+    #navbr {
+        top: calc(100% + 8px);
+        border-radius: 12px;
+        padding: 8px 0;
+    }
+
+    #navbr .navb {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 10px 16px;
+        border-top: 0.5px solid rgba(255, 255, 255, 0.2);
+        margin-top: 6px;
+    }
+
+    #navbr .navb a {
+        font-family: "Mikhak-Medium-1";
+        text-align: center;
+        padding: 10px;
+        border-radius: 8px;
+        font-size: 15px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: 0.3s ease;
+    }
+    
+    #navbr .navb a{
+        background-color: var(--primary-color);
+        color: var(--card-bg);
+        border: 1px solid var(--primary-color);
+    }
+
+    #navbr .navb a:hover {
+        background-color: var(--primary-blue);
+    }
+
+    #navbr ul li a {
+        padding: 12px 20px;
+        font-size: 15px;
+    }
+
+    main {
+        padding: 10px 12px;
+    }
+
+    .Fc {
+        font-size: 14px;
+        gap: 4px;
+        padding: 8px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
+
+@media (max-width: 400px) {
+    header a {
+        font-size: 14px;
+    }
+
+    .btns {
+        gap: 4px;
+    }
+
+    #navbr {
+        right: 4px;
+        width: calc(100vw - 8px);
+    }
+
+    main {
+        padding: 8px 8px;
+    }
+
+    .Fc {
+        font-size: 12px;
+    }
+}

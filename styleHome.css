@@ -1,0 +1,336 @@
+.hero1 {
+    display: flex;
+    flex-direction: column;
+    background: var(--linear), url("../Pro_it/stu.jpg") no-repeat center center/cover;
+    background-attachment: fixed;
+    min-height: calc(100vh - 400px);
+    border-radius: 20px;
+    padding: 30px;
+    color: var(--gold-color);
+    font-family:"Mikhak-Medium-1";
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.hero1 h2 {
+    margin-bottom: 5px;
+    font-size: 35px;
+}
+
+.hero1 p {
+    color: var(--card-bg);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.hero1 .btn a{
+    background-color: var(--cta-color);
+    color: var(--card-bg);
+    border: none;
+    padding: 7px 14px;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    font-family: "Mikhak-Medium-1";
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.btn a:hover {
+    background-color: var(--primary-blue);
+    scale: 1.02;
+}
+
+.hero1 .btn {   
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.hero2 h2{
+    font-family: "Wingx";
+    color: var(--primary-color);
+    font-weight: normal;
+    font-size: 30px;
+    text-align: center;
+}
+
+.hero2 .tecs{
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.hero2 .tec {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: var(--card-bg);
+    border-radius: 30px;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    box-shadow: var(--shadow-custom);
+}
+
+.hero2 .tec img {
+    width: 100%;
+    border-radius: 10%;
+    margin-bottom: 5px;
+}
+
+.hero2 .tec h3 {
+    font-family: "Mikhak-Medium-1";
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+.hero2 .tec p {
+    font-family: "Mikhak-Medium-1";
+    font-weight: bold;
+    font-size: 15px;
+    color: var(--gold-color);
+}
+
+.hero2 .btnr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero2 .btnr a {
+    font-family: "Mikhak-Medium-1";
+    background-color: var(--primary-blue);
+    padding: 7px 14px;
+    border: none;
+    font-size: 17px;
+    border-radius: 7px;
+    margin: 20px 0px;
+    transition: 0.3s ease;
+    text-decoration: none;
+    color: var(--card-bg);
+}
+
+.hero2 .btnr a:hover {
+    background-color: var(--primary-color);
+    scale: 1.03;
+}
+
+.hero3 h2 {
+    font-family: "Wingx";
+    color: var(--primary-color);
+    font-weight: normal;
+    font-size: 30px;
+    text-align: center;
+}
+
+.hero3 .cours{
+    display: grid;
+    height: auto;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.hero3 .course {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: var(--card-bg);
+    border-radius: 30px;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    box-shadow: var(--shadow-custom);
+}
+
+.hero3 .course img {
+    width: 100%;
+    border-radius: 10%;
+    margin-bottom: 5px;
+}
+
+.hero3 .course h3 {
+    font-family: "Mikhak-Medium-1";
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+.hero3 .course p {
+    display: flex;
+    position: absolute; 
+    top: 15px;
+    left: 15px;
+    z-index: 10;
+    background-color: var(--goldtr-color);
+    font-family: "Mikhak-Medium-1";
+    font-size: 15px;
+    color: var(--primary-color);
+    border-radius: 50px;
+    padding: 2px 5px;
+}
+
+.hero3 .btnr {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.hero3 .btnr a {
+    font-family: "Mikhak-Medium-1";
+    background-color: var(--gold-color);
+    padding: 5px 10px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    color: var(--card-bg);
+    border-radius: 7px;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.hero3 .btnr a:hover {
+    background-color: #e9ba00;
+}
+
+.hero3 .btnr .bt {
+    background-color: var(--cta-color);
+}
+
+.hero3 .btnr .bt:hover {
+    background-color: #eb6600;
+    scale: 1.02;
+}
+
+.hero4 h2 {
+    font-family: "Wingx";
+    color: var(--primary-color);
+    font-weight: normal;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.hero4 .pons {
+    display: grid;
+    height: auto;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+.hero4 .pons .pon {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: var(--card-bg);
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: var(--shadow-custom);
+}
+
+.hero4 .pons .pon .poni {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.hero4 .pons .pon .po2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hero4 .pons .pon .poni .po2 svg {
+    display: flex;
+    background-color: var(--text-muted);
+    border: 2px solid var(--text-muted);
+    border-radius: 50%;
+    fill: var(--card-bg);
+    padding: 2px;
+    margin-bottom: 10px;
+}
+.hero4 .pons .pon .po2-i {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.hero4 .pons .pon  .poni .po2-i h3 {
+    font-family: "Mikhak-Medium-1";
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--gold-color);
+}
+
+.hero4 .pons .pon .po2-i p {
+    font-family: "Mikhak-Medium-1";
+    font-size: 15px;
+    color: var(--cta-color);
+}
+
+.hero4 .pons .pon p {
+    color: var(--primary-blue);
+    font-family: "Mikhak-Medium-1";
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.hero4 .bttn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero4 .bttn a{
+    font-family: "Mikhak-Medium-1";
+    background-color: var(--primary-blue);
+    padding: 7px 14px;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+    color: var(--card-bg);
+    border-radius: 7px;
+    margin: 30px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.bttn a:hover {
+    background-color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .hero1 {
+        min-height: calc(100vh - 200px);
+        padding: 20px;
+    }
+
+    .hero1 h2 {
+        font-size: 24px;
+    }
+
+    .hero1 p {
+        font-size: 15px;
+    }
+
+    .hero4 .pons {
+        grid-template-columns: 1fr;
+    }
+}

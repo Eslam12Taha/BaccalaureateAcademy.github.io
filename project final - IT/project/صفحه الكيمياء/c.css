@@ -1,0 +1,218 @@
+main{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20px;
+    padding-right: 40px;
+    background: #fff;
+}
+video{
+    margin-top: 10px;
+    border-radius: 10px;
+}
+div{
+    display: flex;
+    align-items: flex-start;
+}
+#progress-container{
+    width: 600px;
+    height: 15px;
+    background: #ddd;
+    margin-top: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    direction: ltr;
+}
+#progress-bar{
+    color: white;
+    height: 100%;
+    width: 0%;
+    background: #2563EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#video-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+body{
+    margin: 0;
+    font-family: arial,sans-serif;
+    direction: rtl;
+}
+div{
+    display: flex;
+}
+aside{
+    width: 30%;
+    background: #f5f5f5;
+    padding: 20px;
+    height: 100vh;
+    box-sizing: border-box;
+    border-left: 2px solid #ddd;
+}
+aside h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+aside h4{
+    margin-top: 20px;
+    color: #333;
+}
+aside ul{
+    list-style: none;
+    padding: 0;
+}
+aside li{
+    margin: 10px 0;
+}
+aside button{
+    text-decoration: none;
+    color: white;
+    background: #2563EB;
+    padding: 5px;
+    display: block;
+    border-radius: 5px;
+}
+aside button:hover{
+    transform: scale(1.1);
+    border-radius: 5px;
+    transition: 0.5s;
+}
+main div h4.jj{
+    border-radius: 10px;
+    background: #2563EB;
+    color: white;
+}
+main div h4.jj:hover{
+    border-radius: 10px;
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+main div h4.xx{
+    border-radius: 10px;
+    background: #2563EB;
+    color: white;
+}
+main div h4.xx:hover{
+    border-radius: 10px;
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+main div p.nn{
+    border-radius: 10px;
+    background: #2563EB;
+    color: white;
+}
+main div p.nn:hover{
+    border-radius: 10px;
+    transform: scale(1.1);
+    transition: 0.5s;
+    background: white;
+    color: black;
+}
+
+main div h4{
+    color: white;
+    background: #2563EB;
+    display: block;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+main div h4:hover{
+    background: white;
+    color: black;
+}
+header{
+    background: #2563EB;
+    display: block;
+    padding: 30px;
+    color: white;
+}
+footer{
+    background: #2563EB;
+    display: block;
+    padding: 30px;
+    color: white;
+}
+main div p{
+    color: white;
+    background: #2563EB;
+    padding: 50px;
+}
+aside h2.cc{
+    color: black;
+}
+aside h2.cc:hover{
+    color:  #2563EB;
+    transform: scale(1.5);
+    transition:0.5s;
+}
+aside h4.zz{
+    color: black;
+    text-align: center;
+}
+aside h4.zz:hover{
+    color: #2563EB;
+    transform: scale(1.5);
+    transition:0.5s;
+}
+aside h4.mm{
+    color: black;
+    text-align: center;
+}
+aside h4.mm:hover{
+    color: #2563EB;
+    transform: scale(1.5);
+    transition:0.5s;
+}
+aside h2.rr{
+    color: black;
+}
+aside h2.rr:hover{
+    color: #2563EB;
+    transform: scale(1.5);
+    transition:0.5s;
+}
+main{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("stu.jpg");
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px; 
+}
+@media (max-width:768px) {
+    
+    div{
+        flex-direction: column;
+    }
+
+    aside{
+        width: 100%;
+        height: auto;
+        border-left: none;
+        border-bottom:2px solid #ddd ;
+    }
+    main{
+        width:100%;
+        padding:10px;
+    }
+    ifream{
+        width:100%;
+        height: 250px;
+    }
+    
+}

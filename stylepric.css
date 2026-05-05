@@ -1,0 +1,205 @@
+.pricSec {
+    text-align: center;
+}
+
+.pricSec h2 {
+    font-family: "Wingx";
+    color: var(--primary-color);
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.pricSec p {
+    font-family: "Mikhak-Medium-1";
+    font-size: 20px;
+    color: var(--gold-color);
+    margin-bottom: 30px;
+}
+
+.pricing {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.card {
+    background-color: var(--card-bg);
+    padding: 25px;
+    border-radius: 15px;
+    position: relative;
+    transition: 0.4;
+    border: 2px solid var(--text-muted);
+}
+
+.card h3{
+    color: var(--primary-color);
+    font-family: "Mikhak-Medium-1";
+    font-size: 25px;
+}
+
+.card:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: var(--shadow-custom);
+}
+
+.card p {
+    font-family: "wingx";
+    font-size: 28px;
+    margin: 15px 0;
+    color: var(--primary-color);
+}
+
+.card p.par {
+    color: var(--gold-color);
+}
+
+.card span {
+    font-family: "Mikhak-Medium-1";
+    font-size: 17px;
+    color: var(--text-muted);
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card ul li {
+    font-family: "Mikhak-Medium-1";
+    margin: 10px 0;
+    color: var(--text-main);
+}
+
+.card button {
+    font-family: "Mikhak-Medium-1";
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--cta-color);
+    color: var(--card-bg);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.comparsion .btn a{
+    font-family: "Mikhak-Medium-1";
+    font-size: 15px;
+    font-weight: bold;
+    margin: 20px 0px;
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--cta-color);
+    color: var(--card-bg);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+
+.comparsion a:hover {
+    background-color: #d8630a;
+    scale: 1.02;
+}
+
+.card button:hover {
+    background-color: #eb6600;
+    scale: 1.02;
+}
+
+.card .btn {
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    transition: 0.3s ease;
+}
+
+.card .btn:hover {
+    background-color: var(--primary-blue);
+    color: var(--card-bg);
+}
+
+.popular {
+    border: 2px solid var(--cta-color);
+}
+
+.badge {
+    font-family: "Mikhak-Medium-1";
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background-color: var(--cta-color);
+    color: white;
+    padding: 5px 12px;
+    font-size: 12px;
+    border-radius: 20px;
+}
+
+.comparsion {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.comparsion h2 {
+    font-family: "wingx";
+    font-size: 30px;
+    font-weight: normal;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.comparsion table {
+    overflow: hidden;
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
+    border-radius: 20px;
+    border: 1px solid var(--text-muted);
+}
+
+table {
+    font-family: "Mikhak-Medium-1";
+    font-size: 15px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--text-muted);
+}
+
+thead {
+    background-color: var(--bg-main);
+}
+
+th {
+    font-family: "Mikhak-Medium-1";
+    padding: 15px;
+    color: var(--cta-color);
+}
+
+td {
+    padding: 15px;
+    border: 1px solid var(--text-muted);
+    font-size: 18px;
+}
+
+td:last-child,
+th:last-child {
+    background-color: var(--bg-main);
+    font-weight: bold;
+}
+
+tbody tr:hover {
+    background-color: var(--goldtr-color);
+    transition: 0.3s;
+}
+
+.che {
+    color: var(--cta-color);
+}
+
+.cro  {
+    color: var(--text-muted);
+}

@@ -1,0 +1,147 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Mikhak-Medium-1";
+    background-color: var(--bg-main);
+    color: var(--text-main);
+}
+
+.hero {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+
+.hero h1 {
+    font-family: "wingx";
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+.hero p {
+    text-align: center;
+    color: var(--gold-color);
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+
+.col {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: var(--shadow-custom);
+}
+
+.con {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 20px 22px;
+    cursor: pointer;
+    direction: rtl;
+}
+
+.card span {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--text-main);
+    text-align: right;
+}
+
+.card button {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--bg-main);
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--primary-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 14px;
+    transition: background 0.3s ease;
+}
+
+.card button:hover {
+    background: var(--bg-main);
+}
+
+.card.open button {
+    background: var(--bg-main);
+    color: var(--primary-blue);
+}
+
+.pr {
+    display: none;
+    padding: 0 22px 20px 22px;
+    color: var(--text-muted);
+    font-size: 15px;
+    line-height: 1.8;
+    border-top: 1px solid var(--bg-main);
+}
+
+.pr.visible {
+    display: block;
+}
+
+.pr ol {
+    padding-right: 20px;
+    margin-top: 10px;
+}
+
+.pr ol li {
+    margin-bottom: 6px;
+}
+
+.box {
+    background: var(--linear) , url("../Pro_it/stu.jpg") no-repeat center center/cover;
+    border-radius: 16px;
+    padding: 30px 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.box h3 {
+    font-size: 27px;
+    font-weight: bold;
+    color: var(--gold-color);
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 20px;
+    color: var(--card-bg);
+    margin-bottom: 24px;
+}
+
+.cta-btn {
+    display: inline-block;
+    background: var(--cta-color);
+    color: var(--card-bg);
+    font-size: 16px;
+    padding: 7px 14px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.cta-btn:hover {
+    background: #d9612a;
+}
