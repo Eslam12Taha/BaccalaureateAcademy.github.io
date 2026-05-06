@@ -12,7 +12,7 @@ const coursesData = [
     subject:"فرنساوي",
     price:40,
     teacher:"الاستاذ:  رضا الفاروق",
-    img:"Courses/french.png",
+    img:"Courses/French.png",
     link:"project/صفحه الفرنساوي/F.html"
   },
   {
@@ -20,7 +20,7 @@ const coursesData = [
     subject:"إنجليزي",
     price:60,
     teacher:"الاستاذ:   محمد رضوان",
-    img:"Courses/english.png",
+    img:"Courses/English.png",
     link:"project/صفحه الانجليزي/E.html"
   },
 {
@@ -52,7 +52,7 @@ const coursesData = [
     subject:"كيمياء",
     price:70,
     teacher:"الاستاذ:  محمد عبدالجواد",
-    img:"Courses/chemistry.png",
+    img:"Courses/Chemistry.png",
     link:"project/صفحه الكيمياء/c.html"
   },
   {
@@ -60,7 +60,7 @@ const coursesData = [
     subject:"أحياء",
     price:55,
     teacher:"الاستاذ:  محمد أيمن",
-    img:"Courses/biology.png",
+    img:"Courses/Biology.png",
     link:"project/صفحه الاحياء/b.html"
   },
   
@@ -69,7 +69,7 @@ const coursesData = [
   subject:"تاريخ",
   price:50,
   teacher:"الاستاذ:محمد خليل",
-  img:"Courses/history.png"  ,
+  img:"Courses/History.png"  ,
   link:"project/صفحه التاريخ/h.html"
 },
 
@@ -78,7 +78,7 @@ const coursesData = [
   subject:"جيولوجيا",
   price:65,
   teacher:"الاستاذ:  محمد صالح",
-  img:"Courses/geology.png",
+  img:"Courses/Geology.png",
   link:"project/صفحه الجيولوجيا/ge.html"
 },
 {
@@ -86,7 +86,7 @@ const coursesData = [
   subject:"جغرافيا",
   price:40,
   teacher:"الاستاذ:  محمد خليل",
-  img:"Courses/geography.png"  ,
+  img:"Courses/Geography.png"  ,
   link:"project/صفحه الجغرافيا/g.html"
 }, 
 ];
